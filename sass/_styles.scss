@@ -29,6 +29,11 @@
     font-size: 16px;
     padding-left: 5px;
 
+    @include media(tablet) {
+        font-size: 26px;
+        padding-left: 10px;
+    }
+
     @include media(desktop) {
         font-size: 46px;
         padding-left: 15px;
@@ -44,7 +49,7 @@
         height: 3px;
         border-radius: 50%;
         background-color: #151ee7;
-        @include media(desktop) {
+        @include media(tablet) {
             width: 8px;
             height: 8px;
         }
@@ -52,6 +57,9 @@
 }
 
 .side_text-list {
+    @include media(tablet) {
+        margin-top: 160px;
+    }
     @include media(desktop) {
         margin-top: 160px;
     }
@@ -59,6 +67,10 @@
 
 .side_text-list-label {
     margin-top: 30px;
+
+    @include media(tablet) {
+        margin-top: 100px;
+    }
 
     @include media(desktop) {
         margin-top: 154px;
@@ -74,13 +86,16 @@
         -webkit-background-clip: text; /* For Safari */
         -webkit-text-fill-color: transparent; /* For Safari */
 
+        @include media(tablet) {
+            font-size: 35px;
+        }
         @include media(desktop) {
             font-size: 50px;
         }
     }
 
     & img {
-        @include media(desktop) {
+        @include media(tablet) {
             width: 100px;
             height: 50px;
         }
@@ -89,6 +104,9 @@
     & > li:last-child {
         font-size: 16px;
         margin-top: 7px;
+        @include media(tablet) {
+            font-size: 24px;
+        }
         @include media(desktop) {
             font-size: 34px;
         }
@@ -96,7 +114,7 @@
 }
 
 .hero-wrapper {
-    @include media(desktop) {
+    @include media(tablet) {
         display: flex;
         justify-content: space-between;
     }
@@ -111,12 +129,23 @@
     background-repeat: no-repeat;
     display: none;
 
-    @include media(desktop) {
+    @include media(tablet) {
         display: block;
+        width: 524px;
+        height: 750px;
+    }
+    @include media(desktop) {
+        width: 604px;
+        height: 867px;
     }
 }
 
 .about-wrapper {
+    @include media(tablet) {
+        display: flex;
+        align-items: flex-start;
+        gap: 160px;
+    }
     @include media(desktop) {
         display: flex;
         align-items: flex-start;
@@ -132,6 +161,10 @@
     width: 300px;
     height: auto;
 
+    @include media(tablet) {
+        width: 467px;
+    }
+
     @include media(desktop) {
         width: 767px;
     }
@@ -143,6 +176,13 @@
     left: 250px;
     width: 101px;
     height: auto;
+
+    @include media(tablet) {
+        width: 120px;
+        left: 400px;
+        bottom: 0;
+    }
+
     @include media(desktop) {
         width: 254px;
         left: 650px;
@@ -192,6 +232,9 @@
 .footer-link {
     font-size: 12px;
     color: #ffffff;
+    @include media(tablet) {
+        font-size: 18px;
+    }
     @include media(desktop) {
         font-size: 30px;
     }
@@ -199,10 +242,13 @@
 
 .footer-heading {
     display: none;
-    @include media(desktop) {
+    @include media(tablet) {
         display: block;
-        font-size: 44px;
+        font-size: 24px;
         font-weight: 700;
+    }
+    @include media(desktop) {
+        font-size: 44px;
     }
 }
 

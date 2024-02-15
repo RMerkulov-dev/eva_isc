@@ -73,7 +73,7 @@ body {
     padding: 0 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1240px) {
   .container {
     width: 100%;
     max-width: 1280px;
@@ -94,6 +94,11 @@ body {
   font-size: 22px;
   line-height: 1.1;
 }
+@media screen and (min-width: 1240px) {
+  .heading-h1 {
+    font-size: 48px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .heading-h1 {
     font-size: 88px;
@@ -102,6 +107,11 @@ body {
 .heading-h1--hero {
   font-size: 20px;
 }
+@media screen and (min-width: 1240px) {
+  .heading-h1--hero {
+    font-size: 38px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .heading-h1--hero {
     font-size: 68px;
@@ -109,6 +119,11 @@ body {
 }
 .heading-h1 .hero-h1-bold {
   font-size: 40px;
+}
+@media screen and (min-width: 1240px) {
+  .heading-h1 .hero-h1-bold {
+    font-size: 68px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .heading-h1 .hero-h1-bold {
@@ -165,6 +180,12 @@ body {
   font-size: 16px;
   padding-left: 5px;
 }
+@media screen and (min-width: 1240px) {
+  .side_text-item {
+    font-size: 26px;
+    padding-left: 10px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .side_text-item {
     font-size: 46px;
@@ -182,13 +203,18 @@ body {
   border-radius: 50%;
   background-color: #151ee7;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1240px) {
   .side_text-item::after {
     width: 8px;
     height: 8px;
   }
 }
 
+@media screen and (min-width: 1240px) {
+  .side_text-list {
+    margin-top: 160px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .side_text-list {
     margin-top: 160px;
@@ -197,6 +223,11 @@ body {
 
 .side_text-list-label {
   margin-top: 30px;
+}
+@media screen and (min-width: 1240px) {
+  .side_text-list-label {
+    margin-top: 100px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .side_text-list-label {
@@ -212,12 +243,17 @@ body {
   -webkit-background-clip: text; /* For Safari */
   -webkit-text-fill-color: transparent; /* For Safari */
 }
+@media screen and (min-width: 1240px) {
+  .side_text-list-label__item {
+    font-size: 35px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .side_text-list-label__item {
     font-size: 50px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1240px) {
   .side_text-list-label img {
     width: 100px;
     height: 50px;
@@ -227,13 +263,18 @@ body {
   font-size: 16px;
   margin-top: 7px;
 }
+@media screen and (min-width: 1240px) {
+  .side_text-list-label > li:last-child {
+    font-size: 24px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .side_text-list-label > li:last-child {
     font-size: 34px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1240px) {
   .hero-wrapper {
     display: flex;
     justify-content: space-between;
@@ -249,12 +290,27 @@ body {
   background-repeat: no-repeat;
   display: none;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1240px) {
   .hero-wrapper__side-image {
     display: block;
+    width: 524px;
+    height: 750px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero-wrapper__side-image {
+    width: 604px;
+    height: 867px;
   }
 }
 
+@media screen and (min-width: 1240px) {
+  .about-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 160px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .about-wrapper {
     display: flex;
@@ -271,6 +327,11 @@ body {
   width: 300px;
   height: auto;
 }
+@media screen and (min-width: 1240px) {
+  .about-image-1 {
+    width: 467px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .about-image-1 {
     width: 767px;
@@ -283,6 +344,13 @@ body {
   left: 250px;
   width: 101px;
   height: auto;
+}
+@media screen and (min-width: 1240px) {
+  .about-image-2 {
+    width: 120px;
+    left: 400px;
+    bottom: 0;
+  }
 }
 @media screen and (min-width: 1920px) {
   .about-image-2 {
@@ -343,6 +411,11 @@ body {
   font-size: 12px;
   color: #ffffff;
 }
+@media screen and (min-width: 1240px) {
+  .footer-link {
+    font-size: 18px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .footer-link {
     font-size: 30px;
@@ -352,11 +425,16 @@ body {
 .footer-heading {
   display: none;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1240px) {
   .footer-heading {
     display: block;
-    font-size: 44px;
+    font-size: 24px;
     font-weight: 700;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .footer-heading {
+    font-size: 44px;
   }
 }
 
