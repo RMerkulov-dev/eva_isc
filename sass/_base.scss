@@ -1,0 +1,76 @@
+body {
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // height: 100vh;
+    color: #ffffff;
+}
+
+@include media(mobile) {
+    .container {
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+@include media(tablet) {
+    .container {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+}
+@include media(desktop) {
+    .container {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 80px;
+    }
+}
+
+.heading-h1 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.1;
+
+    @include media(desktop) {
+        font-size: 88px;
+    }
+
+    &--hero {
+        font-size: 20px;
+        @include media(desktop) {
+            font-size: 68px;
+        }
+    }
+
+    .hero-h1-bold {
+        font-size: 40px;
+        @include media(desktop) {
+            font-size: 88px;
+        }
+    }
+}
+
+.heading-h2 {
+}
+
+.section {
+    padding: 40px 0;
+
+    @include media(desktop) {
+        padding: 116px 0;
+    }
+}
+
+.footer {
+    padding: 40px 0;
+    @include media(desktop) {
+        padding: 166px 0 116px 0;
+    }
+}
